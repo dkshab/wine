@@ -1,0 +1,18 @@
+.About {
+  width: 70vw;
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__form {
+    background: $generic-bg;
+    box-shadow: $generic-box-shadow;
+    border-radius: $generic-border-radius;
+
+    padding: 2rem 1.5rem;
+
+    .buttons {
+      text-align: center;
+      margin: 1rem 0 0 0;
+    }
+  }
+}

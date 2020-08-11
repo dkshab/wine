@@ -1,0 +1,98 @@
+.SignInAndSignUp {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .Tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__row {
+      .tab {
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin: 0px 2px;
+        background: $dark-red;
+        color: $white;
+        border-radius: 3px 3px 0px 0px;
+        box-shadow: 0 0.5rem 0.8rem #00000080;
+        &.selected {
+          background: #fffffff6;
+          color: $dark-red;
+          border-top: 3px solid $dark-red;
+        }
+      }
+    }
+    &__panels {
+      background-color: $white;
+      box-shadow: 0 3px 7px -1px rgba(#000, 0.35);
+      min-height: 200px;
+      width: 100%;
+      border-radius: 3px;
+      overflow: hidden;
+      padding: 1.75rem 1.75rem 0 1.75rem;
+    }
+  }
+}
+
+.SignIn,
+.SignUp {
+  background-color: $white;
+  padding: 1rem;
+
+  p {
+    text-align: center;
+    a {
+      color: $light-red;
+      text-decoration: none;
+    }
+  }
+
+  .field + .field {
+    margin-top: 1rem;
+    // margin-bottom: 2rem;
+  }
+  .pw-links {
+    border-top: 2px solid $light-gray;
+  }
+  .buttons {
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+
+    button + button {
+      margin-left: 0.25rem;
+    }
+    // .signup {
+    //   color: $white;
+    //   background-color: $light-blue;
+    //   &:disabled {
+    //     color: #000;
+    //   }
+    // }
+  }
+}
+
+@media (max-width: 421px) {
+  .SignIn,
+  .SignUp {
+    button + button {
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .SignInAndSignUp {
+    width: 90vw;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .SignInAndSignUp {
+    width: 40vw;
+    max-width: 420px;
+  }
+}

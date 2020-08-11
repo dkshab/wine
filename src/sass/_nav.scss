@@ -1,0 +1,45 @@
+.NavBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 3.5rem 0;
+  border-bottom: $generic-border;
+
+  .logo {
+    h1 {
+      padding: 0;
+      margin: 0;
+      color: #5d1443;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: $dark-blue;
+    li {
+      list-style-type: none;
+      padding: 0 0.75rem 0 0;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      &:last-child {
+        font-weight: bold;
+      }
+      span {
+        cursor: pointer;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}

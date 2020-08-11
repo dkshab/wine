@@ -1,0 +1,14 @@
+export const LANDING = "/landing";
+export const SIGNUP = "/signup";
+export const SIGNIN = "/signin";
+export const SIGNOUT = "/signout";
+export const HOME = "/";
+export const ABOUT = "/about";
+export const CONTACT = "/contact";
+export const PRIVACY = "/privacy";
+export const TERMS = "/terms";
+export const ACCOUNT = "/account";
+export const PROFILE = "/profile";
+export const UPDATE_PROFILE = "/update-profile";
+export const PASSWORD_FORGET = "/pw-forget";
+export const PASSWORD_CHANGE = "/change-pw";
